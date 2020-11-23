@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="UsersItem"
+            type="com.umarapps.citrudbitsinterviewtest.models.UsersItem" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hDocListItemMCvStyle"
+        style="@style/hDocListItemCvStyle">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/hProfileIv"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_70dp"
+                android:layout_marginTop="8dp"
+
+                android:src="@drawable/profile_holder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/hRoundShapeOverlay" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hNameTv"
+                style="@style/hDocListItemTvStyle1"
+                android:text="@{UsersItem.name}"
+                app:layout_constraintStart_toEndOf="@+id/hProfileIv"
+                app:layout_constraintTop_toTopOf="@+id/hProfileIv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hSpecialityTv"
+                style="@style/hDocListItemTvStyle2"
+                android:textSize="@dimen/_12sp"
+                android:text="@{UsersItem.username}"
+                app:layout_constraintStart_toEndOf="@+id/hProfileIv"
+                app:layout_constraintTop_toBottomOf="@+id/hNameTv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hExpTv"
+                style="@style/hDocListItemTvStyle2"
+                android:text="@{UsersItem.email}"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintStart_toEndOf="@+id/hProfileIv"
+                app:layout_constraintTop_toBottomOf="@+id/hSpecialityTv" />
+
+
+
+
+            <View
+                android:id="@+id/hLineSeprator"
+                style="@style/hhDocListItemLineSepStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hProfileIv" />
+
+
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/hLoctionTv"
+                style="@style/hDocListItemTvStyle2"
+                android:text="@{UsersItem.address.city}"
+                android:drawablePadding="@dimen/_5dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:textColor="@color/hGreenColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hLineSeprator" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

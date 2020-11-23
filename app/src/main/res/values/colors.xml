@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#750C22</color>
+    <color name="colorPrimaryDark">#8F0E29</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorYellow">#F3E96B</color>
+    <color name="colorBrown">#F28A30</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorDarkBrown">#795548</color>
+    <color name="colorDarkestBrown">#504037</color>
+    <color name="colorGrey">#6c6c6c</color>
+    <color name="bottom_tab_divider">#B6B6B6</color>
+    <color name="hLiteBlackColor">#666666</color>
+    <color name="hLiteBlackColor1">#707070</color>
+    <color name="tealDark">#0094DE</color>
+    <color name="grey4">#7d7d7d</color>
+    <color name="bg_calendar">#F0F0F0</color>
+    <color name="hBlackColor">#000000</color>
+    <color name="hBlueColor">#031cd7</color>
+    <color name="hLiteBlueColor">#03A9F4</color>
+    <color name="hWhiteColor">#ffffff</color>
+    <color name="hThemeColor">#1EB5C4</color>
+    <!--    <color name="hThemeColor">#F44336</color>-->
+    <color name="hRedColor">#F44336</color>
+    <color name="hLiteGray">#F0F0F0</color>
+    <color name="hGreenColor">#4CAF50</color>
+    <color name="hTransparentColor">#00000000</color>
+    <color name="hWelcomeCardColor">#99CDAB</color>
+    <color name="hHintColor">#97a1aa</color>
+    <color name="hStrokeColor">#F0F0F0</color>
+    <color name="hDarkBlackColor">#212121</color>
+    <color name="color_btn_doc_list">#00C6FF</color>
+</resources>

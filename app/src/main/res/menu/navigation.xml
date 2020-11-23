@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/navigation_users"
+    android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+    android:title="@string/users"/><item
+    android:id="@+id/navigation_albums"
+    android:icon="@drawable/ic_baseline_album_24"
+    android:title="@string/albums"/><item
+    android:id="@+id/navigation_photos"
+    android:icon="@drawable/ic_baseline_photo_album_24"
+    android:title="@string/photos"/>
+    </menu>

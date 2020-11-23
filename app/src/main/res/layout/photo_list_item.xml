@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="PhotoItem"
+            type="com.umarapps.citrudbitsinterviewtest.models.PhotosItem" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hDocListItemMCvStyle"
+        style="@style/hDocListItemCvStyle">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp">
+
+            <WebView
+                android:padding="@dimen/_2dp"
+                android:id="@+id/hTestIv"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                app:imageThumb="@{PhotoItem.thumbnailUrl}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/hCutShapeOverlayAllSides" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3dp"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/colorBlack"
+                android:text="@{PhotoItem.title}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hTestIv" />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

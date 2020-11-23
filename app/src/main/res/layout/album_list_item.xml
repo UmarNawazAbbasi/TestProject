@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="AlbumItem"
+            type="com.umarapps.citrudbitsinterviewtest.models.AlbumsItem" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hDocListItemMCvStyle"
+        style="@style/hDocListItemCvStyle">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/hProfileIv"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_70dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_baseline_album_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/hRoundShapeOverlay" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hNameTv"
+                style="@style/hDocListItemTvStyle2"
+                android:text="@{AlbumItem.title}"
+                app:layout_constraintStart_toEndOf="@+id/hProfileIv"
+                app:layout_constraintTop_toTopOf="@+id/hProfileIv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hSpecialityTv"
+                style="@style/hDocListItemTvStyle2"
+                android:textSize="@dimen/_12sp"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/hProfileIv"
+                app:layout_constraintTop_toBottomOf="@+id/hNameTv" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

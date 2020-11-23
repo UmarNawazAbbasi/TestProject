@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CitrudBitsInterViewTest</string>
+    <string name="photos">Photos</string>
+    <string name="albums">Albums</string>
+    <string name="users">Users</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">userList fragment</string>
+    <string name="app_no_internet_msg">Internet connection is required!</string>
+    <string name="name">Name</string>
+    <string name="username">userName</string>
+</resources>

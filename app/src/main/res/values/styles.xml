@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="hDocListItemCvStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">@dimen/_8dp</item>
+        <item name="cardCornerRadius">@dimen/_8dp</item>
+        <item name="cardElevation">@dimen/_8dp</item>
+    </style>
+    <style name="hDocListItemTvStyle1">
+        <item name="android:layout_width">@dimen/_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/_8dp</item>
+        <item name="android:paddingStart">@dimen/_5dp</item>
+        <item name="android:paddingEnd">@dimen/_5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_18sp</item>
+    </style>
+
+
+    <style name="hDocListItemTvStyle2">
+        <item name="android:layout_width">@dimen/_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_8dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingStart">@dimen/_5dp</item>
+        <item name="android:paddingEnd">@dimen/_5dp</item>
+
+        <item name="android:textColor">@color/hLiteBlackColor1</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+    </style>
+    <style name="hhDocListItemLineSepStyle">
+        <item name="android:layout_height">@dimen/_point5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/_8dp</item>
+        <item name="android:layout_marginTop">@dimen/_8dp</item>
+        <item name="android:background">@color/grey4</item>
+    </style>
+    <style name="hRoundShapeOverlay" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="hCutShapeOverlayAllSides" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@dimen/_4dp</item>
+    </style>
+</resources>
